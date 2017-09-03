@@ -1,0 +1,263 @@
+@import "compass/css3";
+header {
+    display: block;
+}
+body {
+    margin: 0;
+}
+
+.navigation {
+  border: 1px solid;
+  list-style: none;
+  margin: 0;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+    position: absolute;
+    font-weight: bold;
+    font-size: 130%;
+}
+#logo {
+    font-size: 140%;
+}
+.menuitems {
+    
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: black;
+    align-items: center;
+}
+
+.navigation a:hover {
+  background: darken(deepskyblue, 2%);
+}
+#topimg {
+    background: url(pictures/topimg.jpg) no-repeat center center;
+    height: 500px;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.chapter {
+    display: block;
+    width: 100%;
+}
+.chaptername {
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Imprima';
+}
+/*Styling for linjer ved siden av kapittelnavn */
+    .chaptername:before,
+    .chaptername:after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 10%;
+    }
+    .chaptername:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    .chaptername:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+/*  */
+#berryinfo {
+    width: 70%;
+    margin: auto;
+    font-family: 'Roboto Condensed';
+    overflow: hidden;
+}
+    #infopicdiv {
+        float: left;
+        width: 40%;
+    }
+    #infopicdiv img {
+        width: 80%;
+        border-radius: 5px;
+    }
+    #infotextdiv {
+        padding-left: 10px;
+  
+    }
+/* bærtur */
+#berrytour {
+    width: 70%;
+    margin: auto;
+    font-family: 'Roboto Condensed';
+}
+.slideshow-separate {
+    display: block;
+}
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+          width:100%;
+          position: relative;
+          margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor:pointer;
+          height: 13px;
+          width: 13px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+#spotifyproysen {
+    float: right;
+    margin-left: 5px;
+}
+
+
+/*andre bær*/
+#otherberries {
+    font-family: 'Roboto Condensed';
+    max-width: 85%;
+    margin: auto;
+}
+
+.flex-container {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flex-container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flex-item {
+
+  padding: 5px;
+  width: 200px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  transition: 0.25s ease;
+  border-radius: 5px;
+}
+.flex-item:hover {
+	transform: scale(1.2);
+    background-color: aliceblue;
+}
+.flex-item img {
+    width: 80%;
+    border-radius: 5px;
+}
+/*
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }*/
