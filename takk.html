@@ -2,7 +2,7 @@
 <html lang="nn">
 
 <head>
-    <title>Det eg er takknemmelig for?!!?!</title>
+    <title>Blåbær</title>
     <meta charset="UTF-8" />
     <link type="text/css" rel="stylesheet" href="takk.css" />
     <link rel="icon" type="image/ico" href="pictures/favicon-96x96.png">
@@ -11,20 +11,26 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
 </head>
 
 <body>
     <div class="navbar-component">
-        <ul class="navigation" style="font-family: Ubuntu Condensed">
-            <li><a href="#" class="menuitems" id="logo">BLÅBÆR</a></li>
-            <li><a href="#" class="menuitems">Plukking</a></li>
-            <li><a href="#" class="menuitems">Andre bær</a></li>
+        <ul class="navigation" style="font-family: Fira Sans">
+            <li>
+                <a href="#"><img src="pictures/blueberries.png" id="logoimg" /></a>
+            </li>
+            <li><a href="#blaabaer" id="logo">BLÅBÆR</a></li>
+            <li><a href="#plukking" class="menuitems">PLUKKING</a></li>
+            <li><a href="#oppskrifter" class="menuitems">OPPSKRIFTER</a></li>
+            <li><a href="#otherberries" class="menuitems">ANDRE BÆR</a></li>
         </ul>
     </div>
 
     <div id="topimg">
     </div>
     <div class="chapter">
+        <a name="blaabaer" />
         <h1 class="chaptername">Blåbær</h1>
         <div id="berryinfo">
             <div id="infopicdiv">
@@ -39,6 +45,7 @@
         </div>
     </div>
     <div class="chapter">
+        <a name="plukking" />
         <h1 class="chaptername">Plukking</h1>
         <div id="berrytour">
             <div class="slideshow-separate">
@@ -69,8 +76,100 @@
         </div>
 
     </div>
+    <a name="oppskrifter" />
+    <div class="chapter">
+        
+        <h1 class="chaptername">Oppskrifter</h1>
+        <div id="recipes">
+            <button id="cakebtn" type="button" class="choice" onclick="cakecontentClick()">Blåbærkake</button>
+            <button id="muffinbtn" type="button" class="choice" onclick="muffincontentClick()">Blåbærmuffins</button>
+            <button id="piebtn" type="button" class="choice" onclick="piecontentClick()">Blåbærpai</button>
+            <div id="cakecontent">
+                <h2>Blåbærkake</h2>
+                <img class="recipeimg" src="pictures/blueberrycake.jpg" />
+                <div class="recipe-container">
+                    <div class="ingredients">
+                        <ul>
+                            <li>75 g smør</li>
+                            <li>3 egg</li>
+                            <li>2 dl sukker</li>
+                            <li>2,5 dl hvetemel</li>
+                            <li>2 dl ferske eller fryste blåbær</li>
+                        </ul>
+                    </div>
+                    <div class="directions">
+                        <ol>
+                            <li>Smelt og avkjøl smøret. Rør sammen egg, sukker og smøret med en stålvisp. Sikt i melet og rør deigen glatt.</li>
+
+                            <li>Ha deigen i en liten rund form (20 cm i diameter) med bakepapir i bunnen. Fordel bærene over deigen (frosne bær behøver ikke tines).</li>
+
+                            <li>Stek kaken nederst i ovnen ved 200°C i 40-45 min. Avkjøl kaken i formen.</li>
+
+                            <li>Løsne kaken fra formen ved å skjære forsiktig langsmed kanten av formen med en skarp kniv. Ta den kalde kaken ut av formen og fjern bakepapiret.</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+            <div id="muffincontent">
+                <h2>Blåbærmuffins</h2>
+                <img class="recipeimg" src="pictures/muffin.jpg" />
+                <div class="recipe-container">
+                    <div class="ingredients">
+                        <ul>
+                            <li>3 stk egg</li>
+                            <li>2 dl sukker</li>
+                            <li>>50 g TINE Meierismør</li>
+                            <li>1 dl Tinemelk® Helmelk 3,5 % fett</li>
+                            <li>4 dl hvetemel</li>
+                            <li>1 ½ ts bakepulver</li>
+                            <li>1 ts malt kardemomme</li>
+                            <li>200 g friske eller fryste blåbær</li>
+                        </ul>
+                    </div>
+                    <div class="directions">
+                        
+                        <ol>
+                            <li>Sett stekeovnen på 190 °C.</li>
+                            <li>Pisk egg og sukker til lett og porøs eggedosis. Smelt smør og bland det med melken. Ha det i eggedosisen. Bland mel, bakepulver og kardemomme og sikt det i røren til slutt.</li>
+                            <li>Rør forsiktig inn blåbærene.</li>
+                            <li>Fordel røren i muffinsformer, ca ¾ fulle, og stek dem midt i ovnen i 20-25 minutter.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="piecontent">
+                <h2>Blåbærpai</h2>
+                <img class="recipeimg" src="pictures/pie.jpg" />
+                <div class="recipe-container">
+                    <div class="ingredients">
+                        <ul>
+                            <li>21⁄2 dl hvetemel</li>
+                            <li>100 g smør</li>
+                            <li>2 ss sukker</li>
+                            <li>1 ss vann</li>
+                            <li>1⁄2 l blåbær friske eller frosne</li>
+                            <li>1⁄2 dl sukker</li>
+                            <li>1 ss potetmel</li>
+                        </ul>
+                    </div>
+                    <div class="directions">
+                        <ol>
+                            <li>Kjør ingrediensene til deigen raskt sammen i hurtigmikser, eller lag deigen for hånd ved å smuldre smør i mel, tilsette sukker og vann og kna raskt sammen til en fast deig.</li>
+                            <li>Pakk deigen i plast og sett kaldt i 20-30 minutter (om du skal trykke deigen ut i formen, trenger den ikke å hvile).</li>
+                            <li>Forvarm stekeovnen til 220 °C. Kjevle ut deigen til del er litt større enn formen. Løft deigen forsiktig over i formen og trykk den ned.</li>
+                            <li>Bland blåbær, sukker og potetmel i en bolle, og rør slik at noen av bærene sprekker og safter seg. Hell alt i paiskallet. Jevn ut overflaten.</li>
+                            <li>Stek paien på nest nederste rille i stekeovnen i ca. 30 minutter, eller til paideigen begynner å få fin farge. Sjekk paien halvveis i steketiden. Om noen av bærene fortsatt har et hvitt lag av potetmel, så bruk en gaffel til å blande dem med resten av bærerne.</li>
+                            <li>Ta paien ut av ovnen og la den hvile i noen minutter slik at den får «satt» seg litt før du serverer. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="chapter">
+        <a name="otherberries" />
         <h1 class="chaptername">Andre bær</h1>
         <div id="otherberries">
             <ul class="flex-container">
@@ -97,6 +196,7 @@
     </div>
     <!-- Legger script for bildeslide på bunnen slik at alt er lasta inn først -->
     <script src="pictureslide.js"></script>
+    <script src="buttons.js"></script>
 </body>
 
 </html>
