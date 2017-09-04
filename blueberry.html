@@ -1,4 +1,6 @@
-<!-- Prosjekt 1 i webutvikling -->
+<!-- Prosjekt 1 i webutvikling 
+Skrive av: Sølve R. Bø Hunvik
+29. august - 3. september 2017 -->
 
 <!DOCTYPE html>
 <html lang="nn">
@@ -10,29 +12,29 @@
     <link rel="icon" type="image/ico" href="pictures/favicon-96x96.png">
 
     <!-- GOOGLE FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu%20Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto%20Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira%20Sans' rel='stylesheet'>
 </head>
 
 <body>
     <div class="navbar-component">
-        <ul class="navigation" style="font-family: Fira Sans">
+        <ul class="navigation">
             <li>
-                <a href="#"><img src="pictures/blueberries.png" id="logoimg" /></a>
+                <a href="#"><img src="pictures/blueberries.png" id="logoimg" alt="blåbærlogo" /></a>
             </li>
             <li><a href="#blaabaer" id="logo">BLÅBÆR</a></li>
             <li><a href="#plukking" class="menuitems">PLUKKING</a></li>
             <li><a href="#oppskrifter" class="menuitems">OPPSKRIFTER</a></li>
-            <li><a href="#otherberries" class="menuitems">ANDRE BÆR</a></li>
+            <li><a href="#andrebaer" class="menuitems">ANDRE BÆR</a></li>
         </ul>
     </div>
 
     <div id="topimg">
     </div>
     <div class="chapter">
-        <a name="blaabaer" />
+        <a id="blaabaer" ></a>
         <h1 class="chaptername">Blåbær</h1>
         <div id="berryinfo">
             <div id="infopicdiv">
@@ -47,7 +49,7 @@
         </div>
     </div>
     <div class="chapter">
-        <a name="plukking" />
+        <a id="plukking" ></a>
         <h1 class="chaptername">Plukking</h1>
         <div id="berrytour">
             <div class="slideshow-separate">
@@ -78,7 +80,7 @@
         </div>
 
     </div>
-    <a name="oppskrifter" />
+    <a id="oppskrifter" ></a>
     <div class="chapter">
         
         <h1 class="chaptername">Oppskrifter</h1>
@@ -87,8 +89,8 @@
             <button id="muffinbtn" type="button" class="choice" onclick="muffincontentClick()">Blåbærmuffins</button>
             <button id="piebtn" type="button" class="choice" onclick="piecontentClick()">Blåbærpai</button>
             <div id="cakecontent">
-                <h2>Blåbærkake</h2>
-                <img class="recipeimg" src="pictures/blueberrycake.jpg" />
+                <h2 class="recipename">Blåbærkake</h2>
+                <img class="recipeimg" src="pictures/blueberrycake.jpg" alt="bilde av blåbærkake" />
                 <div class="recipe-container">
                     <div class="ingredients">
                         <ul>
@@ -114,8 +116,8 @@
 
             </div>
             <div id="muffincontent">
-                <h2>Blåbærmuffins</h2>
-                <img class="recipeimg" src="pictures/muffin.jpg" />
+                <h2 class="recipename">Blåbærmuffins</h2>
+                <img class="recipeimg" src="pictures/muffin.jpg" alt="bilde av blåbærmuffins" />
                 <div class="recipe-container">
                     <div class="ingredients">
                         <ul>
@@ -141,8 +143,8 @@
                 </div>
             </div>
             <div id="piecontent">
-                <h2>Blåbærpai</h2>
-                <img class="recipeimg" src="pictures/pie.jpg" />
+                <h2 class="recipename">Blåbærpai</h2>
+                <img class="recipeimg" src="pictures/pie.jpg" alt="bilde av blåbærpai"/>
                 <div class="recipe-container">
                     <div class="ingredients">
                         <ul>
@@ -171,7 +173,7 @@
     </div>
 
     <div class="chapter">
-        <a name="otherberries" />
+        <a id="andrebaer" ></a>
         <h1 class="chaptername">Andre bær</h1>
         <div id="otherberries">
             <ul class="flex-container">
@@ -200,5 +202,7 @@
     <script src="pictureslide.js"></script>
     <script src="buttons.js"></script>
 </body>
-
+<footer>
+    <p><span id="lfoot">BLÅBÆR</span><span id="rfoot">Created by: Sølve Bø Hunvik</span></p>
+</footer>
 </html>

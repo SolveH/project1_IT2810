@@ -1,3 +1,7 @@
+/* Prosjekt 1 i webutvikling 
+Skrive av: Sølve R. Bø Hunvik
+29. august - 3. september 2017 */
+
 var slideIndex = 0;
 showSlides();
 
